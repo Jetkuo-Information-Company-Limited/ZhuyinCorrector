@@ -88,6 +88,11 @@ build-all.bat
 - 加入黑白名單站點設定（避免在密碼欄等敏感欄位處理）
 - 補上更多測試（規則優先順序、衝突、長文本效能）
 
+## 來源與授權聲明
+
+- 本專案部分內容延伸自 `panel/NOTICE.txt` 所標示之來源專案與規格（Bopomofo IVS Font Specification／注音 IVS 字型規格）。
+- 相關著作權與授權條款請參閱 `panel/NOTICE.txt`（Apache License 2.0）。
+
 ## 第三方圖示
 
 - `panel/icons/maximize-2.svg`、`panel/icons/minimize-2.svg`、`panel/icons/x.svg` 來自 Feather Icons（MIT License）
