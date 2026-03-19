@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "得報 - 注音校正編輯器",
+  "description": "提供使用者進行破音字校正編輯的工具插件",
+  "version": "0.1.0",
+  "icons": {
+    "16": "panel/icons/icon16.png",
+    "32": "panel/icons/icon32.png",
+    "48": "panel/icons/icon48.png",
+    "128": "panel/icons/icon128.png"
+  },
+  "permissions": ["storage", "contextMenus", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_title": "注音校正編輯器",
+    "default_icon": {
+      "16": "panel/icons/icon16.png",
+      "32": "panel/icons/icon32.png",
+      "48": "panel/icons/icon48.png",
+      "128": "panel/icons/icon128.png"
+    }
+  },
+  "commands": {
+    "correct-current-field": {
+      "suggested_key": {
+        "default": "Alt+Shift+Z"
+      },
+      "description": "校正目前聚焦輸入欄位內容"
+    },
+    "open-editor-panel": {
+      "suggested_key": {
+        "default": "Alt+Shift+E"
+      },
+      "description": "開啟右側注音編輯器面板"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/zhuyin-corrector.js", "src/content-script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["panel/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "zhuyin-phonetic-corrector",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome extension for Zhuyin phonetic correction editor.",
+  "scripts": {
+    "build": "npm run build:panel",
+    "build:panel": "esbuild panel-src/main.jsx --bundle --minify --format=iife --platform=browser --target=chrome120 --loader:.ttf=file --outfile=panel/panel.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "esbuild": "latest",
+    "vitest": "latest"
+  }
+}
