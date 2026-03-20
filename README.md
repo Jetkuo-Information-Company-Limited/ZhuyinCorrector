@@ -96,3 +96,6 @@ build-all.bat
 ## 第三方圖示
 
 - `panel/icons/maximize-2.svg`、`panel/icons/minimize-2.svg`、`panel/icons/x.svg` 來自 Feather Icons（MIT License）
+
+## License
+This project is licensed under the Apache License 2.0.
