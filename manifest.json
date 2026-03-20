@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "得報 - 注音校正編輯器",
+  "name": "注音校正編輯器",
   "description": "提供使用者進行破音字校正編輯的工具插件",
   "version": "0.1.0",
   "icons": {

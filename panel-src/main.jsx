@@ -338,7 +338,6 @@ function App() {
     <main className="panel">
       <header className="panel-header">
         <h1 className="panel-title">
-          <img src={LOGO_SRC} alt="注音校正編輯器 Logo" className="panel-logo" />
           <span>注音校正編輯器 {PANEL_VERSION}</span>
         </h1>
         <div className="header-actions">
@@ -395,14 +394,6 @@ function App() {
             <a href={`mailto:${ISSUE_EMAIL}`}>{ISSUE_EMAIL}</a>
           </div>
 
-          <div className="info-card">
-            <div className="info-label">特別感謝</div>
-            <a href={URL_BUTKO} target="_blank" rel="noreferrer">
-              ButKo ({URL_BUTKO})
-            </a>
-            <p>Thena (Google 台灣)</p>
-          </div>
-
           <div className="bottom-actions">
             <button type="button" className="ghost" onClick={handleBackToWorkPage}>
               返回校正頁
@@ -416,7 +407,7 @@ function App() {
           <div className="info-card">
             <div className="info-label">本插件使用與衍生聲明</div>
             <p className="license-text">
-              本插件使用注音字型與經整理之破音字資料庫，並延伸自 ButKo 的
+              本插件使用注音字型與經整理之破音字資料庫、設計概念，延伸自 ButKo 的
               <br />
               Bopomofo IVS Font Specification（注音 IVS 字型規格）專案：
               <br />
